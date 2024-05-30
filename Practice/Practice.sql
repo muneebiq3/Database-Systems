@@ -15,7 +15,6 @@ create table new_employee as
 select employee_id, first_name
 from employee;
 
-use `new_employee`;
 alter table `new_employee` drop column `employee_id`;
 create schema if not exists `bank`;
 use `bank`;
